@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Aleo:400,700|Josefin+Sans:400,700&display=swap"
       rel="stylesheet"
     />
+
     <script
       src="https://kit.fontawesome.com/55638b1666.js"
       crossorigin="anonymous"
@@ -23,49 +24,54 @@
   <body class="screen">
     <main class="main">
       <header class="header">
-        <div class="headline">
-          <div class="headline__logo"><h1>Bhromaon</h1></div>
-          <div class="headline__text"><h3>Safe Travel Anywhere</h3></div>
-        </div>
-        <div class="search-container">
-          <form action="/action_page.php">
-            <input
-              type="text"
-              placeholder="Search Your Travel Destination"
-              name="search"
-            />
-            <button class="search" type="submit">
-              Search<i class="fa fa-search"></i>
-            </button>
-          </form>
-        </div>
-        <div class="scroll-down">
-          <div>
-            <a class="scroll-down__text" href="#footer"><h5>Scroll Down</h5></a>
+        <div class="header-wrapper">
+          <div class="header-top">
+            <div class="headline">
+              <div class="headline__logo"><h1>Bhromaon</h1></div>
+              <div class="headline__text"><h3>Safe Travel Anywhere</h3></div>
+            </div>
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input
+                  type="text"
+                  placeholder="Search Your Travel Destination"
+                  name="search"
+                />
+                <button class="search" type="submit">
+                  Search<i class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
           </div>
-          <div>
-            <img
-              class="scroll-down__arrow"
-              src="img/scroll-down.svg"
-              alt="arrow"
-            />
+
+          <div class="scroll-down">
+            <div>
+              <a class="scroll-down__text" href="#footer"
+                ><h5>Scroll Down</h5></a
+              >
+            </div>
+            <div>
+              <a href="#footer">
+                <img
+                  class="scroll-down__arrow"
+                  src="img/scroll-down.svg"
+                  alt="arrow"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </header>
       <nav class="navigation">
         <div class="topnav" id="myTopnav">
-          <div class="topnav__left">
-            <a href="" class="active"><img src="img/Logo.svg" alt="logo"/></a>
-          </div>
-          <div class="topnav__right">
-            <a href="">Who We Are</a>
-            <a href="">What We Do</a>
-            <a href="">Travel With Us</a>
-            <a href="">Contact Us</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
+          <a href="" class="active"><img src="img/Logo.svg" alt="logo"/></a>
+          <a href="">Who We Are</a>
+          <a href="">What We Do</a>
+          <a href="">Travel With Us</a>
+          <a href="">Contact Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </nav>
       <section class="section1">

@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <link
       href="https://fonts.googleapis.com/css?family=Aleo:400,700|Josefin+Sans:400,700&display=swap"
       rel="stylesheet"
@@ -31,11 +28,13 @@
               <div class="headline__text"><h3>Safe Travel Anywhere</h3></div>
             </div>
             <div class="search-container">
-              <form action="/action_page.php">
+              <form class="form" action="/action_page.php">
                 <input
+                  class="input"
                   type="text"
                   placeholder="Search Your Travel Destination"
                   name="search"
+                  autofocus
                 />
                 <button class="search" type="submit">
                   Search<i class="fa fa-search"></i>
@@ -62,18 +61,21 @@
           </div>
         </div>
       </header>
-      <nav class="navigation">
-        <div class="topnav" id="myTopnav">
-          <a href="" class="active"><img src="img/Logo.svg" alt="logo"/></a>
-          <a href="">Who We Are</a>
-          <a href="">What We Do</a>
-          <a href="">Travel With Us</a>
-          <a href="">Contact Us</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </nav>
+
+      <div class="navigation">
+        <nav class="nav-bar">
+          <ul class="list">
+            <a href=""> <li class="navigation-logo">Bhromaon</li></a>
+            <div class="navigation-right">
+              <a href=""><li>Who we are</li></a>
+              <a href=""><li>What we do</li></a>
+              <a href=""><li>Travel with us</li></a>
+              <a href=""><li>Contact us</li></a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+
       <section class="section1">
         <div class="section1-wrapper">
           <div>
@@ -183,16 +185,5 @@
         </div>
       </footer>
     </main>
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
   </body>
 </html>
